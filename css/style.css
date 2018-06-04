@@ -1,0 +1,260 @@
+
+* {
+  margin: 0px;
+  border:0px;
+}
+html {
+  font-family: 'Trebuchet MS', 'sans-serif' ;
+}
+
+
+/**********************************HEADER****************************************/
+header{
+
+    background-image: url("images/grandslam2.jpg");
+    background-repeat: no-repeat, repeat;
+    width:100%;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /**********************************BANNIERE****************************************/
+    h1 {
+      text-align: center;
+      font-size: 3.75rem;
+      color: #FF9933;
+    }
+    h2 {
+      font-size: 2.25rem;
+    }
+    #soustitre {
+      text-align: center;
+      color: #FF9933;
+      font-size: 2.25rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: justify;
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+    .fontroger {
+      font-size: 1.125rem;
+      font-weight: bold;
+      margin-bottom: 2px;
+    }
+    /**********************************NAV****************************************/
+    .ex1 a:hover, .ex1 a:focus {
+	transform: scale(1.2);
+	box-shadow: 0 0 65px #00E5C6 inset, 0 0 20px #00E5C6 inset, 0 0 15px #00E5C6;
+}
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: blue;
+        display:flex;
+        justify-content: center;
+    }
+    nav li {
+        margin-left: 1px;
+        display: inline-block;
+    }
+    nav li a:hover:not(.active)
+     {
+        background-color: black;
+    }
+    nav li a {
+        display: inline-block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width:180px;
+        font-size: 1.375rem;
+
+    }
+    nav li .marge {
+      border-left: 2px solid;
+      border-right: 2px solid;
+    }
+    nav{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: blue;
+      margin-bottom: 10px;
+      box-shadow: 0 6px 8px 0 #006611;
+    }
+
+
+/**********************************SECTION****************************************/
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top:100px;
+}
+.neufhuitzeropx {
+  max-width:980px;
+}
+
+#container2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+margin-top: 50px;
+
+
+}
+h2 {
+  font-size: 36px;
+}
+#googlemaps {
+  width:100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+    /**********************************CONTAINER1****************************************/
+#roger p {
+  margin-top: 0px;
+}
+
+#roger ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+#roger li
+  {
+    margin-right: 10px;
+    margin-top: 15px;
+  }
+  li img:hover {
+width:180px;
+height:180px;
+  }
+    /**********************************CONTAINER2****************************************/
+    /**********************************CONTAINER3****************************************/
+#container3 p {
+  margin-bottom: 25px;
+}
+
+fieldset {
+  display: flex;
+  border-width:2px;
+  border-color: grey;
+  border-style: solid;
+  margin-bottom: 15px;
+  min-height:47px;
+  align-items: center;
+
+}
+#zonetexte {
+  display: flex;
+  align-items: flex-start;
+  min-height:178px;
+}
+#formulaire {
+  display: flex;
+  justify-content: space-between;
+}
+form {
+width:45%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+form .far, form .fas  {
+  font-size: 2rem;
+  color:grey;
+}
+.submit {
+  width: 150px;
+  height: 50px;
+  color: white;
+  background-color: #198CFF;
+  border-radius: 25px;
+  align-self: center;
+  transition: 0.5s;
+  font-weight: bold;
+}
+fieldset .marge {
+  font-size: 1.5rem;
+  opacity: 0.5;
+  margin-left: 60px;
+}
+fieldset .far,fieldset .fas {
+  position: absolute;
+  margin-left: 15px;
+}
+textarea {
+  margin-top: 10px;
+}
+#zonetexte .far {
+  margin-top:10px;
+}
+
+/**********************************FOOTER****************************************/
+footer {
+  background-color: blue;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  height:150px;
+  margin-top: 150px;
+}
+footer a {
+  margin-right: 15px;
+}
+.fab {
+  color: white;
+  margin-right: 40px;
+}
+
+
+
+/**********************************RESPONSIVE****************************************/
+/**********************************RESPONSIVE****************************************/
+/**********************************RESPONSIVE****************************************/
+@media screen and (max-width: 400px) {
+  nav ul {
+    flex-direction: column;
+  }
+  li img {
+    width:300px;
+    height:300px;
+  }
+  .sticky {
+    display: none;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+  #imagegauche {
+    display: none;
+  }
+
+  .fab {
+
+    margin-right:10px;
+  }
+  #roger ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  li img:hover {
+    width:300px;
+    height: 300px;
+  }
+  fieldset {
+    width:400px;
+
+  }
+}
